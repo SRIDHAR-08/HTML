@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with tfoot</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td,caption {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tfoot {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Table with tfoot</h2>
+
+  <table>
+    <caption><center>New Table</center></caption>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th id="Price">Price</th>   <!--id use mention table--> 
+        <th scope="col">Quantity</th>   <!---scope-->
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="Product">Product A</td>
+        <!-- <td rowspan="2">Product A</td> -->
+        <td headers="Price Product ">$10.00</td>
+        <td scope="row" >2</td>
+        <td scope="row">$20.00</td>
+      </tr>
+      <tr>
+        <td >Product B</td>          
+        <td colspan="1">$15.00</td>
+        <td>3</td>
+        <td>$45.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>$65.00</td>
+       </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

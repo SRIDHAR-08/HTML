@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+<body>
+    
+    
+    <article>
+      <h2>Form Element</h2>
+      <form action="https://httpbin.org/get" method="get">
+
+        <fieldset>
+            <legend>Input Element</legend>
+        <p>
+            <label for="first_Name">Enter First Name:</label>
+            <input type="text" name="Enter First Name:" id="firstName" placeholder="First Name" autocomplete="on" autofocus required>
+        </p>
+        <!--
+            type -> input Type 
+
+            name -> label name
+            
+            id   -> label id
+            
+            placeholder -> displayed in the input field before the user enters any value
+
+            autocomplete -> show request provious output
+
+            autofocus -> webpage go directly that line
+            
+            required -> compulsory fill that details
+
+        -->
+        <p>
+            <label for="last_name"> Enter Last Name:</label>
+
+            <input type="text" name = "Enter Last Name:" id="last_name"  placeholder="last name" autocomplete="on" required> 
+        </p>
+
+
+
+        
+        <p>
+            <label for="phone"> Enter Phone number:</label>
+
+            <input type="tel" name = "Enter Phone number:" id="phone"  placeholder="+91xxxxxxxxxx" > 
+        </p>
+
+
+        <label for="fruits">Select a Fruit:</label>
+        <select name="Select a Fruit:" id="fruits" multiple size="4">
+            <optgroup label="Citrus Fruits">
+                <option value="orange">Orange</option>
+                <option value="lemon">Lemon</option>
+                <option value="grapefruit">Grapefruit</option>
+            </optgroup>
+            <optgroup label="Berry Fruits">
+                <option value="strawberry">Strawberry</option>
+                <option value="blueberry">Blueberry</option>
+                <option value="raspberry">Raspberry</option>
+            </optgroup>
+            <optgroup label="Other Fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="kiwi">Kiwi</option>
+            </optgroup> 
+        </select>
+
+
+        <p>
+            <label for="fruits">Select or Enter a Fruit:</label>
+            <input list="fruitList" id="fruits" name="fruits" autocomplete="off">
+        
+            <datalist id="fruitList">
+                <option value="Apple">
+                <option value="Banana">
+                <option value="Orange">
+                <option value="Strawberry">
+                <option value="Grapes">
+            </datalist>
+        </p>
+
+        <p>Choose your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+    
+
+            <p>Select your interests:</p>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" id="gaming" name="interests" value="gaming">
+            <label for="gaming">Gaming</label>
+
+
+            <p>Leave a comment:</p>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </form>
+
+
+    </article>
+
+</body>
+</html>
