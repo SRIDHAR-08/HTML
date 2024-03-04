@@ -1,0 +1,24 @@
+/* #dotted{
+    border: dotted 2px black;
+}
+#dashed{
+    border: dashed 2px red;
+}  */
+#sampleinput{
+    border: solid 8px red;
+    outline: 5px solid black;
+    /* border-radius: 20px; */
+    border-spacing: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    /* outline-offset:  5px; */
+    box-shadow: 2px -2px 5px   rgb(18, 22, 245) ;
+    box-shadow: 0px 0px 5px 10px rgb(18, 245, 18);
+}
+::placeholder{
+    color: rgb(255, 187, 0);
+}
+input{
+    border: inherit;
+}
